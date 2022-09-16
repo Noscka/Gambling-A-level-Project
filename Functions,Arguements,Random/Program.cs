@@ -28,7 +28,7 @@ namespace Functions_Arguements_Random
 			Console.CursorTop += 2;
 		}
 
-		static void Gambling(int GambleBetInt)
+		static void Gambling(Int64 GambleBetInt)
 		{
 			Console.Write("Press any key to Gamble"); /* Final confirmation to start rolling */
 			Console.ReadKey();
@@ -70,7 +70,7 @@ namespace Functions_Arguements_Random
 					2. Convert to int32 (try to catch incorrect formats)
 					3. call Gambling Function to start the addiction
 					*/
-					Gambling(Convert.ToInt32(Console.ReadLine()));
+					Gambling(Convert.ToInt64(Console.ReadLine()));
 
 					while (true) /* while true loop which gets broke when a valid response is gotten */
 					{
